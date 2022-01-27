@@ -1,13 +1,12 @@
 import React from 'react';
-
-import { useDispatch } from 'react-redux';
+ import { useDispatch } from 'react-redux';
 
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import { REMOVE_FROM_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
 
 const CartItem = ({ item }) => {
-  const dispatch = useDispatch();
+    const dispatch = useDispatch();
 
   const removeFromCart = item => {
     dispatch({
